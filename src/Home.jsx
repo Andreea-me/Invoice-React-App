@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <h4>Home</h4>
-  )
-}
+    <div className="homePage">
+      <h1>Home</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur blanditiis, non laborum quas recusandae suscipit tempora similique error quibusdam temporibus iure porro minima dignissimos facere sequi nam optio dicta quaerat asperiores id praesentium nulla? Sapiente rem veniam in doloribus autem totam iste tempore officia harum ea? Eligendi dolore quibusdam ex officiis doloribus aspernatur a ad repellendus tenetur quo soluta ea pariatur autem veniam cupiditate nesciunt magnam esse porro atque rerum, alias reprehenderit nihil! Adipisci, cumque quo officia culpa libero mollitia suscipit maxime quos nemo illum reiciendis, ea dolorem est quisquam iure obcaecati laboriosam alias! Minima veniam culpa accusantium reiciendis impedit saepe recusandae illo. Fuga voluptatem dicta iure dolore totam sit similique numquam accusamus. Cumque, officia nisi non harum in inventore vero corporis tempora sint odio necessitatibus natus esse molestias at aperiam eius fugiat quibusdam quos illum? Sunt soluta neque dolores a commodi! Eum, tenetur accusantium minima dicta perspiciatis voluptas facilis ducimus praesentium, quibusdam eveniet ullam id facere rem beatae laborum. Maiores amet voluptas quos error expedita reprehenderit voluptatem blanditiis porro sit iste inventore, quibusdam sequi, est perferendis praesentium aut rem. Ipsum, harum earum, voluptatum assumenda officiis odit maiores, ab quae possimus aperiam at. Magni sit nisi doloribus recusandae, id eligendi. Tempore fugiat, dolores veniam nesciunt est culpa aliquam, consectetur velit suscipit temporibus quaerat delectus ducimus iste laudantium placeat vitae nihil et consequuntur eos architecto maxime officia dicta hic. A similique suscipit, deleniti fugiat cum enim labore repellat voluptatibus reiciendis optio modi. Eaque ea blanditiis fugiat debitis officiis ipsum reiciendis dicta, minus alias soluta fuga, temporibus deserunt veniam quos repudiandae perferendis sint sunt esse vero consequuntur! Impedit obcaecati sed cumque. Quisquam suscipit commodi, quam cupiditate quod quis fugit repellat. Vero ipsam illum voluptates deserunt! Dolorem dignissimos possimus itaque modi, ea vero laboriosam nobis officia in deleniti, totam assumenda quasi consectetur.</p>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
