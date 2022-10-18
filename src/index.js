@@ -6,15 +6,21 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import Home from "./Home";
+import Dashboard from "./Dashboard";
+import Invoices from "./Invoices";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />}/>
-        <Route path="login" element={<Login/>} />
-        <Route path="home" element={<Home />} />
+        <Route index element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reports" element={<Home />} />
+        <Route path="/invoices" element={<Invoices />} />
+        <Route path="/bills" element={<Home />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -40,7 +40,7 @@ export const Register = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit" onClick={() => props.onFormSwitch("login")}>
+        <button type="submit" className="button" onClick={() => props.onFormSwitch("login")}>
           Register
         </button>
         <button

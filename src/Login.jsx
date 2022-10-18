@@ -1,21 +1,26 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import validation from "./validation";
 
 export const Login = (props) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
 
   const users = [{ email: "dinu@gmail.com", password: "testpassword" }];
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrors(validation({ email, password }));
+
     const account = users.find((user) => user.email === email);
     if (account && account.password === password) {
-      navigate("home");
+      navigate("/home");
     }
   };
+
   return (
     <div className="auth-form-container">
       <form className="login-form" onSubmit={handleSubmit}>
@@ -29,6 +34,7 @@ export const Login = (props) => {
           id="email"
           name="email"
         />
+        {errors.email && <p className="error">{errors.email}</p>}
         <label htmlFor="password">Password</label>
         <input
           value={password}
@@ -38,7 +44,8 @@ export const Login = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit">Log In</button>
+        {errors.password && <p className="error">{errors.password}</p>}
+        <button type="submit" className="button">Log In</button>
         <button
           className="link-btn"
           onClick={() => props.onFormSwitch("register")}
