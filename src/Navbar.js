@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "./image/logo.png";
+import Logo from "./image/Imagine.png";
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <img src={Logo} alt="logo" />
+      <img src={Logo} alt="logo" className="logo-home" />
       <Box
         m={3}
         //margin

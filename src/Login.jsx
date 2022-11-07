@@ -27,6 +27,7 @@ export const Login = (props) => {
         <h2>Login</h2>
         <label htmlFor="email">Email</label>
         <input
+          className="signUpInput"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
@@ -37,6 +38,7 @@ export const Login = (props) => {
         {errors.email && <p className="error">{errors.email}</p>}
         <label htmlFor="password">Password</label>
         <input
+          className="signUpInput"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
@@ -45,7 +47,9 @@ export const Login = (props) => {
           name="password"
         />
         {errors.password && <p className="error">{errors.password}</p>}
-        <button type="submit" className="button">Log In</button>
+        <button type="submit" className="button">
+          Log In
+        </button>
         <button
           className="link-btn"
           onClick={() => props.onFormSwitch("register")}

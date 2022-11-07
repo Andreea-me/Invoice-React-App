@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
 }
 
 body {
@@ -43,9 +43,10 @@ label {
   padding: 0.25rem 0;
 }
 
-input {
+.signUpInput {
   margin: 0.5rem 0;
   padding: 1rem;
+  width: 15rem;
   border: none;
   border-radius: 10px;
 }
@@ -123,6 +124,10 @@ input {
 
 .navbar p {
   margin: 0;
+}
+
+.logo-home{
+  width: 10%;
 }
 
 img {

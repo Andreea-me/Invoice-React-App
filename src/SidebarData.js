@@ -4,11 +4,13 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import DescriptionIcon from "@mui/icons-material/Description";
 import AddCardIcon from "@mui/icons-material/AddCard";
+import { NavLink } from "react-router-dom";
 export const SidebarData = [
   {
     title: "Home",
     icon: <HomeIcon/>,
-    link: "/home",
+    link: <NavLink to="/home"></NavLink>,
+
   },
   {
     title: "Dashboard",
