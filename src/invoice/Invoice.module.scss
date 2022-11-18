@@ -2,16 +2,16 @@
 
 .invoice {
   max-width: $invoiceMaxWidth;
-  margin: ($rhythm * 2) auto;
+  margin: ($rhythm) auto;
   border: 1px solid $tableBorderColor;
-  padding: 2 * $rhythm;
+  padding: $rhythm;
   border-radius: $borderRadius;
   background: $bgColor;
   margin-top: -800px;
 }
 
 .brand {
-  margin-bottom: $rhythm * 2;
+  margin-bottom: $rhythm / 15;
   .logo {
     display: inline-block;
     border-radius: $borderRadius;

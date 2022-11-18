@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  height: 200vh;
+  height: 100%;
 }
 
 body {
@@ -81,10 +81,13 @@ label {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .sidebarList .row {
   width: 100%;
   height: 60px;
-  list-style-type: none;
   margin: 0%;
   display: flex;
   flex-direction: row;
@@ -126,7 +129,7 @@ label {
   margin: 0;
 }
 
-.logo-home{
+.logo-home {
   width: 10%;
 }
 
@@ -149,7 +152,7 @@ img {
   color: #0a5fb4;
 }
 
-.create-invoice{
+.create-invoice {
   color: red;
   display: grid;
   margin-top: -800px;
