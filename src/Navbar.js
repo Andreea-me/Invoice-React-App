@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./image/Imagine.png";
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,13 +15,15 @@ const Navbar = () => {
         justifyContent="flex-end"
         alignItems="flex-end"
       >
-        <Button
-          className="newInvoiceButton"
-          variant="contained"
-          sx={{ backgroundColor: "#ff6633", height: 40 }}
-        >
-          New Invoice
-        </Button>
+        <NavLink style={{ textDecoration: "none" }} to="/newinvoice">
+          <Button
+            className="newInvoiceButton"
+            variant="contained"
+            sx={{ backgroundColor: "#ff6633", height: 40 }}
+          >
+            New Invoice
+          </Button>
+        </NavLink>
       </Box>
     </div>
   );

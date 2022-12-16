@@ -64,7 +64,7 @@ class Invoice extends Component {
   };
 
   handlePayButtonClick = () => {
-    alert("Not implemented");
+    alert("Invoice registered");
   };
 
   formatCurrency = (amount) => {

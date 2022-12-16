@@ -6,7 +6,7 @@ import "./App.css";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <ul className="sidebarList" style={{textDecorationLine: "none"}}>
+      <ul className="sidebarList">
         {SidebarData.map((val, key) => {
           return (
             <>
@@ -14,7 +14,7 @@ function Sidebar() {
                 key={key}
                 id={window.location.pathname === val.link ? "active" : ""}
               >
-                <NavLink to={val.link}>
+                <NavLink style={{ textDecoration: "none" }} to={val.link}>
                   <div className="row">
                     <div id="icon">{val.icon}</div>
                     <div id="title">{val.title}</div>

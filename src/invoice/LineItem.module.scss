@@ -39,9 +39,11 @@ input, input[type=number] {
   padding: $rhythm / 4;
   border: 1px dotted lighten($tableBorderColor, 2%);
   border-radius: $borderRadius;
-  min-width: $rhythm * 2;
-  width: 100%;
+  min-width: $rhythm;
+  width: 55%;
 }
 input[type=number] {
   text-align: center;
+  justify-content: center;
+  margin: auto;
 }

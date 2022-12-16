@@ -8,6 +8,7 @@ import Login from "./Login";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 import Invoices from "./Invoices";
+import NewInvoice from "./NewInvoice";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +22,7 @@ root.render(
         <Route path="/reports" element={<Home />} />
         <Route path="/invoices" element={<Invoices />} />
         <Route path="/bills" element={<Home />} />
+        <Route path="/newinvoice" element={<NewInvoice />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
