@@ -1,0 +1,161 @@
+.App {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form,
+.register-form {
+  margin: auto;
+  text-align: center;
+  border-radius: 2%;
+  display: flex;
+  width: 20%;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+.signUpInput {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  width: 15rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.button {
+  border: none;
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+
+.link-btn {
+  border: none;
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.sidebar {
+  height: 879px;
+  width: 250px;
+  background-color: #2085eb;
+}
+
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sidebarList .row {
+  width: 100%;
+  height: 60px;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sidebarList .row:hover {
+  cursor: pointer;
+  background-color: #0a5fb4;
+}
+
+.sidebarList #active {
+  background-color: #0a5fb4;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+.navbar {
+  height: 90px;
+  width: 100%;
+  background-color: #2085eb;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar p {
+  margin: 0;
+}
+
+.logo-home {
+  width: 10%;
+}
+
+img {
+  padding: 1.3rem;
+  width: 200px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+}
+
+.newInvoiceButton {
+  justify-content: flex-end;
+  align-items: center;
+  color: #0a5fb4;
+}
+
+.create-invoice {
+  color: red;
+  display: grid;
+  margin-top: -800px;
+  margin-left: 600px;
+  position: absolute;
+}
