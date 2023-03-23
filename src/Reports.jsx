@@ -1,16 +1,16 @@
 import React from "react";
-import DefaultInvoice from "./DefaultInvoice";
+import Home from "./Home";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
-const NewInvoice = () => {
+const Reports = () => {
   return (
     <div>
       <Navbar />
       <Sidebar />
-      <DefaultInvoice />
+      <Home />
     </div>
   );
 };
 
-export default NewInvoice;
+export default Reports;

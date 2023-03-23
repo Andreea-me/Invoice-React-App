@@ -5,10 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Login";
-import Home from "./Home";
 import Dashboard from "./Dashboard";
+import Home from "./Home";
 import Invoices from "./Invoices";
 import NewInvoice from "./NewInvoice";
+import Reports from "./Reports";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +20,7 @@ root.render(
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/reports" element={<Home />} />
+        <Route path="/reports" element={<Reports />} />
         <Route path="/invoices" element={<Invoices />} />
         <Route path="/bills" element={<Home />} />
         <Route path="/newinvoice" element={<NewInvoice />} />

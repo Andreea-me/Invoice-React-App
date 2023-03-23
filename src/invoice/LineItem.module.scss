@@ -1,13 +1,12 @@
-@import 'invoice';
+@import "invoice";
 
 .lineItem {
-
   display: grid;
   grid-template-columns: 1fr repeat(2, 5fr) 2fr repeat(2, 3fr) 2fr;
 
   & > div {
     @extend %flex-center;
-    padding: ($rhythm/2);
+    padding: ($rhythm);
     border-left: 1px solid $tableBorderColor;
     width: 100%;
     line-height: $rhythm;
@@ -15,15 +14,17 @@
     &:first-of-type {
       padding: ($rhythm/2) 0;
       border-left: none;
+      margin-left: 5px;
     }
     &:last-of-type {
       padding: ($rhythm/2) 0;
     }
-    &:first-of-type, &:nth-child(4), &:last-of-type {
+    &:first-of-type,
+    &:nth-child(4),
+    &:last-of-type {
       text-align: center;
     }
   }
-
 }
 
 .deleteItem {
@@ -32,18 +33,21 @@
   background: none;
   border: 0;
   padding: 0;
+  margin-top: 5px;
   cursor: pointer;
 }
 
-input, input[type=number] {
+input,
+input[type="number"] {
   padding: $rhythm / 4;
   border: 1px dotted lighten($tableBorderColor, 2%);
   border-radius: $borderRadius;
   min-width: $rhythm;
   width: 55%;
 }
-input[type=number] {
+input[type="number"] {
   text-align: center;
   justify-content: center;
   margin: auto;
+  margin-left: 5px;
 }

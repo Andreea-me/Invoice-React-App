@@ -11,7 +11,6 @@ const validation = (values) => {
   }else if(values.password !== users.password){
     errors.password = "Password is incorrect";
   }
-
   return errors;
 };
 

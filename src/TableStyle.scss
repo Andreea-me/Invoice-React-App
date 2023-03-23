@@ -1,0 +1,38 @@
+$background: #efefef;
+$lfs-blue: #006ac6;
+$lfs-yellow: #fab700;
+body {
+    background-color: $background;
+}
+
+.table-stripped {
+    width: 50%;
+    margin:  -650px 500px;
+    caption {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $lfs-yellow;
+        text-align: center;
+    }
+    thead {
+        border-top: 2px solid $lfs-yellow;
+        border-bottom: 2px solid $lfs-yellow;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-blue;
+            border: 1px solid #F1F1F1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            td {
+                padding-left: 50px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+
+}

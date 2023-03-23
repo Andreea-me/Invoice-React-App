@@ -1,55 +1,48 @@
 import React, { useState } from "react";
+import jsonData from "./tabledata.json";
+import "./TableStyle.scss";
 
-function InvoiceTable(props) {
-  const [item, setItem] = useState("");
-  const [description, setDescription] = useState("");
-  const [qty, setQty] = useState("");
-  const [price, setPrice] = useState("");
+function InvoiceTable() {
+  const [tableData, setTableData] = useState(jsonData);
+  const tableRows = tableData.map((info, i) => {
+    return (
+      <tr key={i}>
+        <td>{info.id}</td>
+        <td>{info.item}</td>
+        <td>{info.description}</td>
+        <td>{info.quantity}</td>
+        <td>{info.price}</td>
+        <td>{info.total}</td>
+      </tr>
+    );
+  });
+  
 
-  const changeItem = (event) => {
-    setItem(event.target.value);
+  const addRows = (data) => {
+    const totalData = tableData.length;
+    data.id = totalData + 1;
+    const updatedtotalData = [...tableData];
+    updatedtotalData.push(data);
+    setTableData(updatedtotalData);
   };
-
-  const changeDescription = (event) => {
-    setDescription(event.target.value);
-  };
-
-  const changeQty = (event) => {
-    setQty(event.target.value);
-  };
-
-  const changePrice = (event) => {
-    setPrice(event.target.value);
-  };
-
-  const transferValue = (event) => {
-    event.preventDefault();
-    const val = {
-      item,
-      description,
-      qty,
-      price,
-    };
-    props.func(val);
-    clearState();
-  };
-
-  const clearState = () => {
-    setItem("");
-    setDescription("");
-  };
-
   return (
     <div>
-      <label>Item</label>
-      <input type="text" value={item} onChange={changeItem} />
-      <label>Description</label>
-      <input type="text" value={description} onChange={changeDescription} />
-      <label>Qty</label>
-      <input type="number" value={qty} onChange={changeQty} />
-      <label>Price</label>
-      <input type="number" value={price} onChange={changePrice} />
-      <button onClick={transferValue}> Click Me</button>
+      <table className="table table-stripped">
+        <caption>Invoices</caption>
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>{tableRows}</tbody>
+      </table>
+      {/* <DefaultInvoice func={addRows} /> */}
+      <div>func={addRows}</div>
     </div>
   );
 }
